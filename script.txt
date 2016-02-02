@@ -1,0 +1,8 @@
+xcodebuild -workspace <libraryProyectName>.xcworkspace -scheme <libraryProyectName> -sdk iphonesimulator -configuration Debug  
+xcodebuild -workspace <libraryProyectName>.xcworkspace -scheme <libraryProyectName> -sdk iphoneos -configuration Debug
+
+# make a new output folder
+mkdir -p ${TARGET_BUILD_DIR}/../<libraryProyectName>
+
+# combine lib files for various platforms into one
+lipo -create "${TARGET_BUILD_DIR}/../Debug-iphoneos/<libraryProyectName>.a" "${TARGET_BUILD_DIR}/../Debug-iphonesimulator/<libraryProyectName>.a" -output "${TARGET_BUILD_DIR}/../<libraryProyectName>/<libraryProyectName>-debug-${CURRENT_PROJECT_VERSION}.a"
