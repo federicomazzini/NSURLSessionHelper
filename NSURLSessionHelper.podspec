@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-		   A simple singleton helper for basic NSURLSessionHelper functions.
+		   Just an example.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/NSURLSessionHelper"
+  s.homepage     = "http://github.com/federicomazzini/NSURLSessionHelper"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "./MIT" }
+  #s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "./LICENSE.txt" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/federicomazzini/NSURLSessionHelper", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/federicomazzini/NSURLSessionHelper.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
